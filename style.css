@@ -1,0 +1,150 @@
+body{
+    background-color: lightblue;
+    min-height:100vh;
+}
+.todoList{
+    
+    margin: 5rem auto ;
+    width:60rem;
+    min-height:20vh;
+    background-color: rgb(224, 255, 255);
+    padding-bottom: 2rem;
+}
+
+.editTask{
+    width:100vw;
+    height:100vh;
+    background:rgba(224, 255, 255 , .6);
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editTaskBox{
+    height: 5rem;
+    background-color: rgb(77, 136, 136);
+    margin:0;
+    z-index: 10;
+    border: 2px solid black;
+    margin:auto;
+    width:70%;
+
+    
+}
+.editTaskBox div{
+    display:flex;
+    align-items: center;
+    margin:auto;
+    width:100%;
+
+}
+.editTask span{
+    font-size: 2rem;
+    margin:0;
+}
+
+.newTasksContainer{
+    width:90%;
+    display:flex;
+    align-items: center;
+    padding: 4rem 0;
+    margin: 0 auto;
+    border-bottom: 5px dotted black;
+    position: relative;
+}
+input[type=text]{
+width:93%;
+height:1.5rem;
+box-shadow: 3px 3px 6px black;
+border: 1px  solid grey;
+}
+
+
+button{
+    height:2rem;
+    box-shadow: 3px 3px 6px black;
+    cursor: pointer;
+}
+.alertInfo{
+    padding-top:2rem;
+}
+
+ul{
+    width:90%;
+    margin:1rem auto ;
+    padding:0;
+    padding: 1rem 0 ;
+    border-bottom: 5px dotted black;
+}
+.alertInfo{
+    display:block;
+    width: 100%;
+    text-align: center;
+    font-size:1.5rem;
+    font-weight: bold;
+    margin-top:-1.5rem
+}
+li{
+    display:flex;
+    justify-content: space-between;
+    margin:0;
+    padding:0;
+    width:100%;
+    min-height: 2rem ;
+    background-color: rgb(153, 221, 221);
+    margin-bottom: 1.5rem;
+    box-shadow: 3px 3px 6px black;
+    position: relative;
+}
+
+li:hover{
+    background-color: rgb(120, 223, 223);
+    cursor: pointer;
+}
+
+ul li p{
+    display:block;
+    margin:auto 5rem auto .5rem;
+    font-size: 1.1rem;
+}
+
+ul li .menuEl{
+    position:absolute;
+height:100%;
+display:flex;
+flex-direction: row;
+align-items: center;
+right:0;
+background-color: rgb(85, 180, 180);
+}
+
+
+ul li .menuEl i{
+    font-size:1.5rem;
+    font-weight: normal;
+    margin-left:.3rem;
+    width:2rem; 
+    height:2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+    ul li .menuEl i:hover{
+        background-color: rgb(190, 223, 223);
+        cursor: pointer;
+        color:#3a3535;
+    }
+
+    .line-through{
+        text-decoration: line-through;
+    }
+
+    .noDisplay{
+        display:none;
+    }
